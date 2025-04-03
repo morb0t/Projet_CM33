@@ -1,18 +1,19 @@
-# Projet CM33
+# CM33 Project  
 
-Ce projet vise à exploiter les capacités de la carte **NXP-LPC5569**, équipée du microprocesseur **CM33**, à travers le développement d'une calculatrice embarquée. Il se structure en trois axes principaux :  
+This project aims to leverage the capabilities of the **NXP-LPC5569** board, equipped with the **CM33** microprocessor, through the development of an embedded calculator. It is structured around three main areas:  
 
-## 1. Gestion des Séquences VT100 et du Système de Fichiers FAT  
-- Conception d'une interface de communication avec la carte SD.  
-- Intégration de la bibliothèque **libc** à **FatFS** pour une gestion optimisée des fichiers.  
+## 1. VT100 Sequences Management and FAT File System  
+- Designing a communication interface with the SD card.  
+- Integrating the **libc** library into **FatFS** for optimized file management.  
 
-## 2. Communication avec l'Écran LCD  
-- Mise en place d'une communication efficace avec un écran LCD.  
-- Initialisation et synchronisation du **cœur 1** avec le **cœur 0** pour exécuter des tâches spécifiques.  
-- Exécution des fonctions d'affichage sur le **cœur 1**, en modes **synchrone** et **asynchrone**.  
+## 2. Communication with the LCD Screen  
+- Implementing efficient communication with an LCD screen.  
+- Initializing and synchronizing **core 1** with **core 0** to execute specific tasks.  
+- Running display functions on **core 1**, in both **synchronous** and **asynchronous** modes.  
 
-## 3. Acquisition des Données Capteurs et Utilisation de PowerQuad  
-- Développement de fonctionnalités permettant la récupération des données de l’accéléromètre **MMA8652**.  
-- Gestion du temps afin d'assurer la synchronisation des opérations.  
-- Implémentation du calcul du **cosinus** d’un vecteur via **PowerQuad**.  
-- Réalisation des **transformations de Fourier directe et inverse** pour l’analyse des signaux analogiques.  
+## 3. Sensor Data Acquisition and PowerQuad Utilization  
+- Developing functionalities to retrieve data from the **MMA8652** accelerometer.  
+- Managing time to ensure synchronization of operations.  
+- Implementing **cosine** computation of a vector using **PowerQuad**.  
+- Performing **direct and inverse Fourier transforms** for analog signal analysis.  
+
